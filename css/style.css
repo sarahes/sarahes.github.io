@@ -1,31 +1,24 @@
-@font-face {
-    font-family: 'LeagueGothicRegular';
-    src: url('fonts/League_Gothic-webfont.eot');
-    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/League_Gothic-webfont.woff') format('woff'),
-         url('fonts/League_Gothic-webfont.ttf') format('truetype'),
-         url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Links */
-a{color: #FFF;}
-a:hover{color: #FFF;}
-footer a{color: #CA5885;}
-footer a:hover{color: #B04D74;}
+a{color: #57B195;}
+a:hover{color: #57B195;}
+footer a{color: #57B195;}
+footer a:hover{color: #57B195;}
 .hello a{text-decoration: none;}
 nav a{
-  color: #FFF;
+  color: #4E4E4E;
   padding: 5px 7px;
   text-decoration: none;
   transition: background 0.35s ease-in-out 0s;
 }
 nav a:hover{
-  color: #FFF;
+  color: #57B195;
   
 }
 
+.textwrap {
+  float: left;
+  padding: 5px 20px 10px 5px;
+}
 /* Lists */
 .inline ul{
   list-style-type: none;
@@ -90,7 +83,7 @@ input, textarea{
 /* Headers */
 h1{
   height: 115px;
-  color: #FFF;
+  color: #4E4E4E;
   font-weight: normal;
   font-size: 3em;
   line-height: .875em;
@@ -103,7 +96,7 @@ h1{
 h2, h3{
   font-size: 2em;
   font-weight: normal;
-  text-align: center;
+/*  text-align: center;*/
   margin: 20px 0;
 }
 .example h3{
@@ -116,7 +109,7 @@ h2, h3{
 body { 
   font-family: 'Trocchi', georgia, serif;
   font-size: 100%;
-  background: #FFF;
+ /* background: url('../images/bg.png');*/
   margin: 0 0 1em;
   color: #4E4E4E;
   letter-spacing: 1.5px; 
@@ -140,11 +133,14 @@ section{
 
 /* Header Section */
 header{
-  background: #7FC6BC;
-  box-shadow: 0 1px 5px -1px #333333;
+  /*background: #57B195;*/
+  background: #FFF;
+  /*opacity: .9;*/
+/*  box-shadow: 0 1px 5px -1px #333333;*/
   position: fixed;
   width: 100%;
   top: 0;
+  border-bottom: solid 1px #eaeaea;
   padding: 20px 0 0 0;
 }
 #header_wrap{
@@ -176,45 +172,52 @@ nav li{
 
 /* About Section */
 #about p{
-  width: 86%;
-  margin: 25px auto;
+ /* width: 85%;
+  margin: 25px auto;*/
+}
+#bio {
+  width: 45%;
+  float: left;
 }
 #skills{
-  height: 100%;
+  width: 48%;
+/*  height: 100%;
   overflow: hidden;
-  margin: 0 20px 20px 40px;
+  margin: 0 20px 20px 40px;*/
+  /*margin: 20px 10px;*/
+  float: right;
 }
-#skills p {margin-left: 40px;}
 .img{text-align: center;}
 .skill {
-  padding: 10px;
-  float: left;
-  margin-right: 20px;
-  width: 29%;
-  min-height: 330px;
-  text-align: center;
-  /*background-color: rgba(153,153,153,.25);*/
+  margin-bottom: 15px;
+  overflow: hidden;
 }
 .skill ul{
+  /*padding: 10px;*/
+  float: right;
+  /*width: 45%;*/
+  width: 80%;
+  height: 50px;
+  /*min-height: 330px;*/
+  text-align: center;
   list-style-type: none;
-  margin: 5px 0 0 37px;
   padding-left: 0;
 }
 .skill li{
   float: left;
-  margin: 0 5px 5px 0;
-  color: #E9E9E9;
-  background: #3D705E; 
+  /*margin: 0 5px 5px 0;*/
+  /*color: #E9E9E9;
+  background: #3D705E; */
   padding: 5px;
   transition: background 0.35s ease-in-out 0s;
 }
-
+.clear {clear: both;}
 /* Skills Section Icons */
 .icon{
   height: 90px;
   width: 90px;
-  text-align: center;
-  margin: 10px auto;
+  float: left;
+  padding: 0 10px 10px 0;
 }
 #design_icon{background: url('../images/design.png') no-repeat center;}
 #html_icon{background: url('../images/html.png') no-repeat center;}
@@ -241,7 +244,8 @@ nav li{
   margin-right: 10px;
   width: 32%;
   text-align: center;
-  background-color: rgba(153,153,153,.25);
+  background-color: #FFF;
+  /*background-color: rgba(255,255,255);*/
   color: #000;
   min-height: 490px;
   transition: all 0.25s ease 0s;
@@ -343,7 +347,7 @@ footer{
 .heart{color: #B04D74;}
 
 /* Media Queries */
-@media only screen and (min-width: 1240px) {
+/*@media only screen and (min-width: 1240px) {
   .skill{min-height: 300px;}
 }
 @media only screen and (max-width: 1240px) and (min-width: 480px) {
@@ -401,4 +405,4 @@ footer{
     margin: 0 auto;
     margin-bottom: 20px;
   }
-}
+}*/
