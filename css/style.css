@@ -160,21 +160,16 @@ nav li{
   width: 45%;
   float: left;
 }
-/*#bio h2, #skills h2 {
-  text-align: center;
-}*/
 #skills {
   margin-left: 25px;
   width: 50%;
   float: right;
 }
-
 .skill {
   margin-bottom: 20px;
   padding: 5px 0;
   overflow: hidden;
 }
-
 .skill ul{
   float: right;
   margin-top: 10px;
