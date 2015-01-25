@@ -152,7 +152,7 @@ nav{
   
 }
 nav ul{
-  /*list-style-type: none;*/
+  list-style-type: none;
 }
 nav li{
   display: inline;
@@ -177,9 +177,10 @@ nav li{
   font-size: 1.1em;
 }
 .skill ul{
-  float: right;
+  display: inline-block;
+  margin-left: 20px;
   margin-top: 10px;
-  width: 82%;
+  width: 78%;
   text-align: center;
   list-style-type: none;
 }
@@ -365,7 +366,7 @@ footer .footerinfo {
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 1180px) and (min-width: 480px) {
+@media only screen and (max-width: 1180px) and (min-width: 380px) {
   header{
     position: static;
   }
@@ -388,15 +389,20 @@ footer .footerinfo {
     margin: 40px 0;
   }
   .icon{
-    margin: 0 15px 0 50px;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+
   }
   .skill {
-    margin-bottom: 20px;
-    padding: 5px 0;
-    overflow: hidden;
-    float: left;
-    font-size: 1.1em;
-    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+    display: inline-block;
+  }
+  .skill ul {
+    display: inline-block;
+    margin: 10px;
+    width: 75%;
   }
   #bio {
     border-bottom: solid 1px #EAEAEA;
@@ -404,5 +410,16 @@ footer .footerinfo {
   }
   img {
     max-width: 97.5%; 
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 380px) {
+  .icon {
+    display:none;
+  }
+  .skill, .skill ul {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
   }
 }
