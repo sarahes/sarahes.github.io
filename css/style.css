@@ -22,7 +22,7 @@ nav a:hover{
 
 /* Lists */
 .inline ul{
-  list-style-type: none;
+  list-style: none;
   margin: 20px 20px;
   padding-left: 0;
 }
@@ -85,7 +85,7 @@ input, textarea{
 h1{
   color: #4E4E4E;
   font-weight: normal;
-  font-size: 3em;
+  font-size: 3.2em;
   float: left;
 }
 h1 a, h1 a:hover, h1 a:visited{
@@ -93,9 +93,9 @@ h1 a, h1 a:hover, h1 a:visited{
   text-decoration: none;
 }
 h2, h3{
-  font-size: 2em;
+  font-size: 2.1em;
   font-weight: normal;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 15px 0;
 }
 .example h3{
   font-size: 1.2em;
@@ -106,6 +106,7 @@ h2, h3{
 
 body { 
   font-family: 'Trocchi', georgia, serif;
+/*  font-family: 'Open Sans', sans-serif;*/
   background: url('../images/bg.png');
   font-size: 100%;
   color: #4E4E4E;
@@ -151,7 +152,7 @@ nav{
   
 }
 nav ul{
-  list-style-type: none;
+  /*list-style-type: none;*/
 }
 nav li{
   display: inline;
@@ -165,7 +166,7 @@ nav li{
   float: left;
 }
 #skills {
-  margin-left: 25px;
+  margin-left: 15px;
   width: 50%;
   float: right;
 }
@@ -173,11 +174,12 @@ nav li{
   margin-bottom: 20px;
   padding: 5px 0;
   overflow: hidden;
+  font-size: 1.1em;
 }
 .skill ul{
   float: right;
   margin-top: 10px;
-  width: 80%;
+  width: 82%;
   text-align: center;
   list-style-type: none;
 }
@@ -234,6 +236,36 @@ nav li{
   border: 15px solid #FFF;
 }
 
+/* Resume */
+#resume h3 {
+  font-size: 1.3em;
+  color: #57B195;
+}
+
+#history ul, #accomplishments ul, #links ul {
+  margin-left: 20px;
+}
+#history ul li, #accomplishments ul li, #links ul li {
+  padding-bottom: 15px;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+#history {
+  width: 45%;
+  float: left;
+}
+#accomplishments, #education, #links {
+  margin-left: 25px;
+  margin-bottom: 30px;
+  width: 50%;
+  float: right;
+}
+
+#education {
+  margin-top: 30px;
+}
+
 /* Contact Secion */
 #contact{
   overflow: hidden;
@@ -260,7 +292,7 @@ nav li{
   margin-bottom: 20px;
 }
 .social ul {
-  list-style-type: none;
+  /*list-style-type: none;*/
 }
 .social li {
   display: inline;
@@ -332,32 +364,38 @@ footer .footerinfo {
   font-weight: normal;
 }
 
-/* Media Queries */
-
-@media only screen and (max-width: 1240px) and (min-width: 480px) {
-  header{position: static;}
-  section{margin-bottom: 80px; padding-top: 0;}
-  nav, header h1, #bio, #skills, .skill, .example {
-    float: none;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-  }
-  #bio {
-    border-bottom: solid 1px #EAEAEA;
-    margin: 30px 0;
-  }
-  img {
-    max-width: 97.5%; 
-  }
-}
+/* Responsive Styles */
 @media only screen and (max-width: 1180px) and (min-width: 480px) {
-  header{position: static;}
-  section{margin-bottom: 80px; padding-top: 0;}
-  nav, header h1, #bio, #skills, .skill, .example {
+  header{
+    position: static;
+  }
+  section{
+    margin-bottom: 80px; 
+    padding-top: 0;
+  }
+  nav, header h1, #bio, #skills, .skill, .example, 
+  #history, #education, #accomplishments, #links {
     float: none;
     width: 100%;
     margin: 0;
+    text-align: center;
+  }
+  nav {
+    padding: 20px 0;
+  }
+  #history, #education, #accomplishments, #links {
+    text-align: left;
+    margin: 40px 0;
+  }
+  .icon{
+    margin: 0 15px 0 50px;
+  }
+  .skill {
+    margin-bottom: 20px;
+    padding: 5px 0;
+    overflow: hidden;
+    float: left;
+    font-size: 1.1em;
     text-align: center;
   }
   #bio {
@@ -366,24 +404,5 @@ footer .footerinfo {
   }
   img {
     max-width: 97.5%; 
-  }
-}
-@media only screen and (max-width: 1040px) {
-  header{position: static; padding: 20px 0;}
-  h1{background: none; padding: 0; }
-  section{margin-bottom: 80px; padding-top: 0;}
-  nav, header h1, #bio, #skills, .skill, .example {
-    float: none;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-  }
-  .icon {
-    float: none;
-    display: none;
-  }
-  #bio {
-    border-bottom: solid 1px #EAEAEA;
-    margin: 30px 0;
   }
 }
