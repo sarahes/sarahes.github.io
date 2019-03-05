@@ -16,7 +16,7 @@
 title: Code and Curiosity
 email: hello@codeandcuriosity.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello, World
+  My name is Sarah. I am a software developer and I really like dogs. I really, really like dogs in costumes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://codeandcuriosity.com"
 twitter_username: sarahescarroll
